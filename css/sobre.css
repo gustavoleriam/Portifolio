@@ -1,0 +1,176 @@
+.sobre {
+    background-color: #1C1D2B;
+   width: 100%;
+    height: 100vh;
+    background-image: url(/imgs/background.png);
+    
+    background-size: cover;
+    
+    
+
+
+}
+
+.sobre h1 {
+    background-color: #020202;
+    padding: 1rem;
+    font-size: 24px;
+    height: 55px;
+
+    margin-bottom: 20px;
+    margin-left: auto;
+    width: 800px;
+    color: #fff;
+    text-decoration: none;
+    padding: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.2;
+    
+
+}
+
+.sobre main {
+    display: grid;
+    grid-template-columns: 1fr 500px 500px 1fr;
+   
+    align-items: center;
+    padding: 1.5rem;
+
+
+}
+
+.sobre1 {
+    background-color: #0e0909a0;
+    grid-column: 2;
+    
+    height: 500px;
+    color: #EEECEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+
+}
+
+.sobre1 p {
+    font-size: 20px;
+    max-width: 40ch;
+    padding: 20px;
+    line-height: 2.3rem;
+    font-weight: 300;
+
+}
+
+.sobre p span {
+    font-weight: 500;
+}
+
+.sobre2 {
+    background-color: #0E0A0A;
+    grid-column: 3;
+    width: 100%;
+    height: 500px;
+}
+
+.sobre h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+
+}
+
+.sobre-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 30px;
+}
+
+.sobre-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.sobre-imgs div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sobre-imgs p {
+    color: #eeececc4;
+    text-align: center;
+    margin: 5px;
+    font-weight: 500;
+}
+
+.sobre-imgs img {
+    justify-items: center;
+    align-items: center;
+    margin: 20px 0px 10px 15px;
+}
+
+@keyframes leftToRight {
+    from {
+        left: 30px;
+    }
+
+    to {
+        left: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre {
+        padding: 1rem;
+    }
+
+    .sobre h1 {
+        font-size: 20px;
+        width: 100%;
+        
+        text-align: center;
+    }
+
+    .sobre main {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .sobre1, .sobre2 {
+       
+    
+        width: 100%;
+        margin: 0 auto;
+    }
+     .sobre1{
+        width: 200px;
+     }
+    .sobre1 p {
+        font-size: 14px;
+        padding: 5px;
+        line-height: 1.9rem;
+    }
+
+    .sobre-imgs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sobre-imgs img {
+        width: 60px;
+        height: 60px;
+    }
+}
